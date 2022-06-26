@@ -5,13 +5,35 @@
 
 /* 博主昵称颜色 --也就是首页侧边栏头像下面那个昵称*/
 .author-info__name {
-    color: #BA55D3;
+    outline: none;
+    /* 自定义属性--c，可通过var函数对其调用 */
+    --c:lightseagreen;
+    /* 调用自定义属性--c，设置文字阴影（发光效果） */
+    text-shadow: 0 0 1px var(--c),
+    0 0 20px var(--c),
+    0 0 40px var(--c),
+    0 0 80px var(--c),
+    0 0 160px var(--c);
+    /* 执行动画：动画名 时长 线性的 无限次播放 */
+    animation: animate 5s linear infinite;
 }
 
+.aside_card_author {
+    position: absolute;
+    width: 10%;
+}
+
+/* 定义动画 */
+@keyframes animate {
+  to{
+      /* 色相旋转滤镜（设置度数可改变颜色） */
+      filter: hue-rotate(360deg);
+  }
+}
 
 /*页脚自定义字段字体颜色,也就是配置文件里的footer_custom_text*/
 .footer_custom_text {
-    color: #EEEEEE;
+    color: #E58a8a;
 }
 
 
@@ -70,6 +92,4 @@ img {
 #article-container a:hover {
     color: #e58a8a;
 }
-
-
 
