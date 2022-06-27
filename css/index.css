@@ -2303,7 +2303,7 @@ figure.highlight pre .javascript .function {
 }
 #recent-posts > .recent-post-item .post_cover {
   overflow: hidden;
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -2679,7 +2679,7 @@ h1.page-title + .tag-cloud-list {
   margin-top: -9px;
   color: #a9a9a9;
   font-style: italic;
-  font-size: 140%;
+  font-size: 80%;
 }
 #aside-content #card-toc .toc-content {
   overflow-y: scroll;

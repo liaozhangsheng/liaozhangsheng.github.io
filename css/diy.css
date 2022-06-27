@@ -3,19 +3,61 @@
     text-decoration: none;
 }
 
-/* 博主昵称颜色 --也就是首页侧边栏头像下面那个昵称*/
-.author-info__name {
+.author-info__name,.author-info__description,.card-info-data {
     outline: none;
-    /* 自定义属性--c，可通过var函数对其调用 */
     --c:lightseagreen;
-    /* 调用自定义属性--c，设置文字阴影（发光效果） */
     text-shadow: 0 0 1px var(--c),
     0 0 20px var(--c),
     0 0 40px var(--c),
     0 0 80px var(--c),
     0 0 160px var(--c);
-    /* 执行动画：动画名 时长 线性的 无限次播放 */
+    animation: animate 7s linear infinite;
+}
+#site-info #site-title {
+  outline: none;
+    --c:lightseagreen;
+    text-shadow: 0 0 1px var(--c),
+    0 0 20px var(--c),
+    0 0 40px var(--c),
+    0 0 80px var(--c),
+    0 0 160px var(--c);
     animation: animate 5s linear infinite;
+}
+#site-info #site-subtitle{
+  outline: none;
+    --c:lightseagreen;
+    text-shadow: 0 0 1px var(--c),
+    0 0 20px var(--c),
+    0 0 40px var(--c),
+    0 0 80px var(--c),
+    0 0 160px var(--c);
+    animation: animate 8s linear infinite;
+}
+
+#card-info-btn{
+  background: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);
+  background-size: 400%;
+  border-radius: 20px;
+  z-index: 1;
+}
+#card-info-btn::before{
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  background: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);
+  background-size: 400%;
+  border-radius: 50px;
+  z-index: -1;
+  animation: streamer 8s infinite;
+}
+#card-info-btn:hover{
+  animation: streamer 8s infinite;
+}
+#card-info-btn:hover::before{
+  animation: streamer 8s infinite;
 }
 
 .aside_card_author {
@@ -23,15 +65,17 @@
     width: 10%;
 }
 
-/* 定义动画 */
+@keyframes streamer{
+  100%{
+      background-position: -400% 0;
+  }
+}
 @keyframes animate {
   to{
-      /* 色相旋转滤镜（设置度数可改变颜色） */
       filter: hue-rotate(360deg);
   }
 }
 
-/*页脚自定义字段字体颜色,也就是配置文件里的footer_custom_text*/
 .footer_custom_text {
     color: #E58a8a;
 }
