@@ -6,7 +6,7 @@
 .author-info__name,.author-info__description,.card-info-data {
     outline: none;
     --c:lightseagreen;
-    text-shadow: 0 0 1px var(--c),
+    text-shadow: 0 0 6px var(--c),
     0 0 20px var(--c),
     0 0 40px var(--c),
     0 0 80px var(--c),
@@ -16,7 +16,7 @@
 #site-info #site-title {
   outline: none;
     --c:lightseagreen;
-    text-shadow: 0 0 1px var(--c),
+    text-shadow: 0 0 5px var(--c),
     0 0 20px var(--c),
     0 0 40px var(--c),
     0 0 80px var(--c),
@@ -26,7 +26,7 @@
 #site-info #site-subtitle{
   outline: none;
     --c:lightseagreen;
-    text-shadow: 0 0 1px var(--c),
+    text-shadow: 0 0 4px var(--c),
     0 0 20px var(--c),
     0 0 40px var(--c),
     0 0 80px var(--c),
@@ -51,7 +51,7 @@
   background-size: 400%;
   border-radius: 50px;
   z-index: -1;
-  animation: streamer 8s infinite;
+  animation: streamer 15s infinite;
 }
 #card-info-btn:hover{
   animation: streamer 8s infinite;
@@ -76,12 +76,7 @@
   }
 }
 
-.footer_custom_text {
-    color: #E58a8a;
-}
 
-
-/*鼠标样式*/
 body {
     cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
         default;
@@ -93,7 +88,6 @@ img {
 }
 
 
-/* 滚动条 */
 ::-webkit-scrollbar {
   width: 14px;
   height: 14px;
@@ -137,3 +131,23 @@ img {
     color: #e58a8a;
 }
 
+.menus_item a{
+  transition: all 0.3s ease-in-out;filter: hue-rotate(calc(var(--i)*60deg));
+}
+.menus_item a::before,
+.menus_item a::after{
+  content: "";
+  transition: all 0.3s ease-in-out 0.3s;
+}
+.menus_item a:hover{
+  background-color: plum;
+  box-shadow: 0 0 25px plum;
+  border-radius: 40px;
+  transition-delay: 0.3s;
+}
+.menus_item a:hover::before,
+.menus_item a:hover::after{
+  width: 138px;
+  height: 58px;
+  transition-delay: 0s;
+}
