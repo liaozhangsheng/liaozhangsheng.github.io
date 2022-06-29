@@ -130,24 +130,3 @@ img {
 #article-container a:hover {
     color: #e58a8a;
 }
-
-.menus_item a{
-  transition: all 0.3s ease-in-out;filter: hue-rotate(calc(var(--i)*60deg));
-}
-.menus_item a::before,
-.menus_item a::after{
-  content: "";
-  transition: all 0.3s ease-in-out 0.3s;
-}
-.menus_item a:hover{
-  background-color: plum;
-  box-shadow: 0 0 25px plum;
-  border-radius: 40px;
-  transition-delay: 0.3s;
-}
-.menus_item a:hover::before,
-.menus_item a:hover::after{
-  width: 138px;
-  height: 58px;
-  transition-delay: 0s;
-}
