@@ -35,30 +35,13 @@
 }
 
 #card-info-btn{
-  background: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);
-  background-size: 400%;
+  background: linear-gradient(to right,#03a9f4,#84fab0,#fa709a,#43e97b,#09a8f4);
+  background-size: 400%; 
   border-radius: 20px;
   z-index: 1;
-}
-#card-info-btn::before{
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  bottom: -5px;
-  right: -5px;
-  background: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);
-  background-size: 400%;
-  border-radius: 50px;
-  z-index: -1;
   animation: streamer 15s infinite;
 }
-#card-info-btn:hover{
-  animation: streamer 8s infinite;
-}
-#card-info-btn:hover::before{
-  animation: streamer 8s infinite;
-}
+
 
 .aside_card_author {
     position: absolute;
@@ -67,7 +50,7 @@
 
 @keyframes streamer{
   100%{
-      background-position: -400% 0;
+      background-position: -200% 0;
   }
 }
 @keyframes animate {
