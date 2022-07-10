@@ -2249,13 +2249,13 @@ figure.highlight pre .javascript .function {
   font-size: 1.5em;
 }
 :root {
-  --recent-post-bgcolor: rgba(255,255,255,0.4);
+  --recent-post-bgcolor: rgba(255,255,255,0.6);
   --article-content-bgcolor: #49b1f5;
   --recent-post-triangle: #fff;
   --recent-post-cover-shadow: #fff;
 }
 [data-theme="dark"] {
-  --recent-post-bgcolor: rgba(35,35,35,0.5);
+  --recent-post-bgcolor: rgba(35,35,35,0.6);
   --article-content-bgcolor: #99999a;
   --recent-post-triangle: #37e2dd;
   --recent-post-cover-shadow: #232323;
