@@ -1366,7 +1366,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: 楷体;
+  font-family: 站酷小薇LOGO体;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -3807,7 +3807,7 @@ h1.page-title + .tag-cloud-list {
 }
 @media screen and (min-width: 768px) {
   #page-header #site-title {
-    font-size: 2.85em;
+    font-size: 4.85em;
   }
 }
 #page-header #site-subtitle {
@@ -3816,7 +3816,7 @@ h1.page-title + .tag-cloud-list {
 }
 @media screen and (min-width: 768px) {
   #page-header #site-subtitle {
-    font-size: 1.72em;
+    font-size: 2.32em;
   }
 }
 #page-header #site_social_icons {
@@ -4047,7 +4047,7 @@ h1.page-title + .tag-cloud-list {
   padding: 0 36px;
   width: 100%;
   height: 60px;
-  font-size: 1.3em;
+  font-size: 2em;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
